@@ -12,7 +12,7 @@ class TasksController < ApplicationController
       title: params[:task][:title],
       description: params[:task][:description]
       })
-      require "pry"; binding.pry
+      
       task.save
 
       redirect_to '/tasks'
